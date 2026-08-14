@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ECOMONKS Payment</title>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Payment Form -->
+    <form id="payment-form" method="POST" action="/userpayment_post/">
+
+        {% csrf_token %}
+
+        <!-- Razorpay Payment ID -->
+        <input type="hidden" name="payment_id" id="payment_id">
+
+        <!-- Customer Details -->
+        <input type="hidden" name="name" value="{{ name }}">
+
+        <input type="hidden" name="email" value="{{ email }}">
+        <input type="hidden" name="amount" value="{{ amount }}">
+        <input type="hidden" name="city" value="{{ city }}">
+        <input type="hidden" name="district" value="{{ district }}">
+        <input type="hidden" name="state" value="{{ state }}">
+        <input type="hidden" name="pincode" value="{{ pincode }}">
+
+        <input type="hidden" name="phone" value="{{ phone }}">
+
+        <input type="hidden" name="address" value="{{ address }}">
+
+        <input type="hidden" name="quantity" value="{{ quantity }}">
+
+    </form>
+
+    <script>
+
+        var options = {
+
+            // Razorpay Key
+            key: "{{ razorpay_api_key }}",
+
+            // Amount in paise
+            amount: "{{ amount }}",
+
+            currency: "{{ currency }}",
+
+            name: "ECOMONKS",
+
+            description: "Karpooram Order Payment",
+
+            image: "",
+
+            handler: function (response) {
+
+                console.log("PAYMENT SUCCESS");
+
+                console.log(response);
+
+                // Set Razorpay Payment ID
+                document.getElementById("payment_id").value =
+                    response.razorpay_payment_id;
+
+                // Submit form to Django backend
+                document.getElementById("payment-form").submit();
+
+            },
+
+            prefill: {
+
+                name: "{{ name }}",
+
+                email: "{{ email }}",
+
+                contact: "{{ phone }}"
+
+            },
+
+            notes: {
+
+                address: "{{ address }}"
+
+            },
+
+            theme: {
+
+                color: "#0b7d45"
+
+            }
+
+        };
+
+        // Initialize Razorpay
+        var rzp = new Razorpay(options);
+
+        // Auto Open Razorpay Popup
+        window.onload = function () {
+
+            rzp.open();
+
+        };
+
+    </script>
+
+</body>
+
+</html>

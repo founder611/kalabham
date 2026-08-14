@@ -1,0 +1,1003 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Best Edible Camphor in Kerala | Pure Bhimseni Karpooram</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Looking for the best edible camphor in Kerala? Discover the benefits, uses, and purity of Divya Bhimseni Karpooram. Premium temple-grade edible camphor available online.">
+
+    <meta name="keywords"
+          content="best edible camphor in kerala, bhimseni karpooram kerala, edible camphor online, pure karpooram, pachai karpooram, temple grade camphor, pooja camphor">
+
+    <meta name="robots" content="index,follow">
+
+    <link rel="canonical"
+          href="https://www.ecomonks.in/blog/best-edible-camphor-in-kerala/">
+
+    <link rel="icon" type="image/jpeg" href="{% static 'homepage/img/logo.jpeg' %}">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="Best Edible Camphor in Kerala | Pure Bhimseni Karpooram">
+
+    <meta property="og:description"
+          content="Discover why Divya Bhimseni Karpooram is considered one of the best edible camphor products in Kerala.">
+
+    <meta property="og:image"
+          content="{% static 'homepage/img/img3.jpeg' %}">
+
+    <meta property="og:type"
+          content="article">
+
+    <meta property="og:url"
+          content="https://www.ecomonks.in/blog/best-edible-camphor-in-kerala/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+
+        :root {
+            --amber:    #C8873A;
+            --amber-lt: #E8B46A;
+            --brown:    #2B1810;
+            --brown-md: #4A2C1A;
+            --cream:    #FDF6EC;
+            --cream-dk: #F5EBD8;
+            --text:     #3D2010;
+            --muted:    #7A5C3E;
+            --white:    #FFFFFF;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body{
+            font-family:Arial, sans-serif;
+            line-height:1.8;
+            color:#333;
+            margin:0;
+            background:#fdf8f2;
+        }
+
+        img { max-width: 100%; }
+
+        /* ── NAVBAR (matches product pages) ── */
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(43,24,16,0.97);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+            border-bottom: 1px solid rgba(200,135,58,0.25);
+            transition: background .3s;
+        }
+        .navbar.scrolled { background: rgba(43,24,16,0.99); }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+        .navbar-brand img {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--amber);
+        }
+        .brand-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem; font-weight: 600;
+            color: var(--amber); letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0; padding: 0;
+        }
+        .nav-links a {
+            display: block; padding: 8px 12px;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.78rem; font-weight: 500;
+            letter-spacing: 1.5px; text-transform: uppercase;
+            border-radius: 4px;
+            transition: color .2s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--amber); }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer; padding: 4px;
+            background: none; border: none;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2px;
+            background: var(--amber); border-radius: 2px;
+            transition: transform .3s, opacity .3s;
+        }
+        .hamburger.open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+        .hamburger.open span:nth-child(2){ opacity: 0; }
+        .hamburger.open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+        .mobile-nav {
+            display: none; position: fixed;
+            top: 64px; left: 0; right: 0;
+            background: var(--brown);
+            padding: 16px 20px 20px;
+            border-bottom: 1px solid rgba(200,135,58,0.2);
+            z-index: 999;
+            animation: slideDown .25s ease;
+        }
+        @keyframes slideDown{ from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none} }
+        .mobile-nav.open { display: block; }
+        .mobile-nav a {
+            display: block; padding: 13px 4px;
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-size: 0.9rem; font-weight: 500;
+            letter-spacing: 1px; text-transform: uppercase;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .mobile-nav a:last-child { border-bottom: none; }
+        .mobile-nav a:hover { color: var(--amber); }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+        }
+
+        /* push content below fixed navbar */
+        .hero{
+            background:#2B1810;
+            color:white;
+            text-align:center;
+            padding:144px 20px 80px;
+        }
+
+        .hero h1{
+            font-size:48px;
+            margin-bottom:20px;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
+
+        .hero p{
+            max-width:800px;
+            margin:auto;
+            font-size:18px;
+            color:#ddd;
+        }
+
+        .container{
+            max-width:1100px;
+            margin:auto;
+            padding:50px 20px;
+        }
+
+        .featured-image{
+            width:100%;
+            border-radius:10px;
+            margin-bottom:40px;
+        }
+
+        h2{
+            color:#8a5a00;
+            margin-top:40px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        .cta-box{
+            background:#fff4de;
+            border-left:5px solid #d89b00;
+            padding:25px;
+            margin-top:40px;
+            border-radius:8px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#d89b00;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:5px;
+            margin-top:15px;
+        }
+
+        .faq{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            margin-top:30px;
+        }
+
+        .faq h3{
+            color:#8a5a00;
+        }
+
+        /* ── FOOTER (matches product pages) ── */
+        .footer { background: var(--brown); color: rgba(255,255,255,0.7); padding: 60px 0 0; margin-top: 50px; }
+        .footer-container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.4fr; gap: 44px; }
+        .footer-col h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem; font-weight: 600;
+            color: var(--white); margin-bottom: 18px;
+            letter-spacing: 2px; text-transform: uppercase;
+        }
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px; margin-bottom: 14px;
+        }
+        .footer-brand img { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--amber); object-fit: cover; }
+        .footer-brand span {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem; font-weight: 600;
+            color: var(--amber); letter-spacing: 3px;
+        }
+        .footer-col p { font-size: 0.85rem; line-height: 1.8; margin-bottom: 18px; }
+        .footer-contact-item {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            font-size: 0.85rem; margin-bottom: 11px;
+        }
+        .footer-contact-item i { color: var(--amber); margin-top: 3px; flex-shrink: 0; }
+        .footer-hours dt { font-size: 0.8rem; font-weight: 500; color: var(--white); letter-spacing: 1px; text-transform: uppercase; margin-top: 10px; }
+        .footer-hours dd { font-size: 0.85rem; margin: 2px 0 0 0; }
+        .social-links {
+            display: flex;
+            gap: 10px; margin-top: 4px;
+            flex-wrap: wrap;
+        }
+        .social-link {
+            width: 36px; height: 36px;
+            border: 1px solid rgba(200,135,58,0.3); border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.82rem;
+            transition: background .2s, border-color .2s, color .2s;
+        }
+        .social-link:hover { background: var(--amber); border-color: var(--amber); color: var(--brown); }
+        .footer-bottom {
+            margin-top: 44px; padding: 18px 0;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px; font-size: 0.8rem;
+            max-width: 1140px;
+            margin-left: auto; margin-right: auto;
+            padding-left: 20px; padding-right: 20px;
+        }
+        .footer-bottom span { color: var(--amber); }
+
+        @media (max-width: 1100px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+        }
+        @media (max-width: 640px) {
+            .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+            .footer-bottom { flex-direction: column; text-align: center; gap: 8px; }
+            .hero { padding: 124px 16px 60px; }
+            .hero h1 { font-size: 34px; }
+        }
+
+        /* ── BACK TO TOP ── */
+        .back-top {
+            position: fixed; bottom: 22px; right: 22px; z-index: 900;
+            width: 42px; height: 42px;
+            background: var(--amber); color: var(--brown);
+            border: none; border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer; font-size: 1rem;
+            box-shadow: 0 4px 16px rgba(200,135,58,0.4);
+            transition: transform .2s, background .2s;
+        }
+        .back-top:hover { background: var(--amber-lt); transform: translateY(-3px); }
+        .back-top.visible { display: flex; }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <a href="/karpooram/" class="navbar-brand">
+        <img src="{% static 'homepage/img/logo.jpeg' %}" alt="Ecomonks logo" onerror="this.onerror=null;this.src='https://placehold.co/40x40/C8873A/FDF6EC?text=EC'">
+        <span class="brand-name">Ecomonks</span>
+    </a>
+    <ul class="nav-links">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'home' %}#about">About</a>
+        <a href="{% url 'home' %}#gallery">Gallery</a>
+        <a href="{% url 'blog' %}">Blog</a>
+        <a href="{% url 'home' %}#testimonials">Reviews</a>
+        <a href="{% url 'home' %}#footer">Contact</a>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'home' %}#about">About</a>
+    <a href="{% url 'home' %}#gallery">Gallery</a>
+    <a href="{% url 'blog' %}">Blog</a>
+    <a href="{% url 'home' %}#testimonials">Testimonials</a>
+    <a href="{% url 'home' %}#order">Order</a>
+    <a href="{% url 'home' %}#footer">Contact</a>
+</div>
+
+<section class="hero">
+
+    <h1>Best Edible Camphor in Kerala</h1>
+
+    <p>
+        Discover the purity, tradition, and spiritual significance of
+        Divya Bhimseni Karpooram – Kerala's trusted choice for pooja,
+        temple rituals, meditation, and devotional practices.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <img src="{% static 'homepage/img/img3.jpeg' %}"
+         alt="Best Edible Camphor in Kerala"
+         class="featured-image">
+
+    <h2>What is Bhimseni Karpooram?</h2>
+
+    <p>
+        Bhimseni Karpooram, also known as edible camphor or Pachai Karpooram,
+        is a sacred ingredient widely used in temples and homes across Kerala.
+        It is valued for its natural aroma, purity, and spiritual significance.
+    </p>
+
+    <p>
+        Unlike synthetic camphor products, pure Bhimseni Karpooram is carefully
+        processed to preserve its traditional qualities and divine fragrance.
+    </p>
+
+    <h2>Why is Bhimseni Karpooram Popular in Kerala?</h2>
+
+    <p>
+        Kerala has a rich spiritual heritage, and camphor plays an important
+        role in temple worship, daily pooja, and religious ceremonies.
+    </p>
+
+    <ul>
+        <li>Used in temple rituals and aarti</li>
+        <li>Creates a sacred atmosphere</li>
+        <li>Produces a divine fragrance</li>
+        <li>Enhances meditation and prayer</li>
+        <li>Traditional ingredient in prasadam</li>
+    </ul>
+
+    <h2>Benefits of Pure Edible Camphor</h2>
+
+    <p>
+        Choosing high-quality edible camphor ensures authenticity,
+        safety, and a better spiritual experience.
+    </p>
+
+    <ul>
+        <li>100% Natural Aroma</li>
+        <li>No Artificial Chemicals</li>
+        <li>Temple Grade Quality</li>
+        <li>Long Lasting Fragrance</li>
+        <li>Ideal for Pooja & Meditation</li>
+        <li>Suitable for Traditional Practices</li>
+    </ul>
+
+    <h2>How to Identify Genuine Bhimseni Karpooram?</h2>
+
+    <p>
+        When purchasing edible camphor online, always verify the quality.
+        Genuine Bhimseni Karpooram has:
+    </p>
+
+    <ul>
+        <li>Natural crystal appearance</li>
+        <li>Strong refreshing aroma</li>
+        <li>No chemical smell</li>
+        <li>Premium temple-grade purity</li>
+        <li>Trusted manufacturer source</li>
+    </ul>
+
+    <h2>Best Edible Camphor for Pooja and Temple Use</h2>
+
+    <p>
+        Pure camphor symbolizes the destruction of ego and negativity.
+        It burns completely without leaving residue, representing
+        purity and devotion in Hindu spiritual traditions.
+    </p>
+
+    <p>
+        Whether you perform daily pooja at home or manage temple rituals,
+        premium Bhimseni Karpooram helps create a sacred atmosphere.
+    </p>
+
+    <div class="cta-box">
+
+        <h2>Buy Premium Divya Bhimseni Karpooram Online</h2>
+
+        <p>
+            Experience authentic temple-grade edible camphor with
+            natural fragrance and unmatched purity.
+        </p>
+
+
+    </div>
+
+    <div class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Is Bhimseni Karpooram edible?</h3>
+
+        <p>
+            Yes. Genuine Bhimseni Karpooram is edible-grade camphor
+            traditionally used in temple prasadam and religious offerings.
+        </p>
+
+        <h3>Can Bhimseni Karpooram be used for pooja?</h3>
+
+        <p>
+            Absolutely. It is widely used in pooja, aarti,
+            havan, meditation, and temple rituals.
+        </p>
+
+        <h3>Why choose Divya Bhimseni Karpooram?</h3>
+
+        <p>
+            Divya Bhimseni Karpooram is carefully selected for purity,
+            fragrance, and temple-grade quality standards.
+        </p>
+
+    </div>
+
+    <h2>What Is Camphor? Everything You Need to Know</h2>
+
+    <p>
+        Camphor has been a part of Indian homes and temples for generations. It is widely used
+        during pooja, meditation and aromatherapy for its fragrance and calming atmosphere.
+        What exactly is camphor?
+    </p>
+
+    <h3>What Is Camphor?</h3>
+
+    <p>
+        Camphor is an aromatic substance known for its cooling effect and pleasant scent.
+        Traditionally it is extracted from the camphor tree while modern manufacturing methods
+        ensure purity and consistent quality. It is commonly used for rituals, wellness practices
+        and home fragrance.
+    </p>
+
+    <h3>How Is Camphor Made?</h3>
+
+    <p>
+        Natural camphor is obtained by steam distilling the wood of the camphor tree and
+        refining it into crystals. Today trusted manufacturers also produce camphor using
+        processes to ensure purity, safety and a clean burn.
+    </p>
+
+    <h3>Common Uses of Camphor</h3>
+
+    <ul>
+        <li>Used during pooja and temple rituals.</li>
+        <li>Creates an atmosphere for meditation.</li>
+        <li>Freshens homes with its fragrance.</li>
+        <li>Popular in aromatherapy and wellness practices.</li>
+    </ul>
+
+    <h3>Why Choose Pure Bhimseni Camphor?</h3>
+
+    <p>
+        Bhimseni camphor is known for its aroma, clean burning and high purity. If you're looking
+        for the quality Bhimseni camphor choose a trusted brand that guarantees authenticity
+        and quality.
+    </p>
+
+    <h3>Buy the Best Camphor Online</h3>
+
+    <p>
+        At Ecomonks we offer the camphor online made with a commitment, to purity and
+        tradition. Whether for pooja, meditation or everyday use our best quality Bhimseni
+        camphor delivers a burn, refreshing fragrance and a truly authentic experience.
+    </p>
+
+    <h2>Natural Camphor vs Synthetic Camphor: What Is the Difference?</h2>
+
+    <p>
+        When you are buying camphor for prayer, fragrance or therapy you need to know the
+        difference between camphor and synthetic camphor.
+    </p>
+
+    <p>
+        First lets talk about what natural camphor's. Natural camphor is a crystal that smells
+        really good and is used a lot in temples, rituals and to make homes smell nice. The smell
+        of camphor is very soothing. It helps to purify the air, which's why it is a big part of
+        spiritual things that people have been doing for a long time.
+    </p>
+
+    <h3>How Is Natural Camphor Made?</h3>
+
+    <p>
+        Natural camphor comes from the wood of the camphor tree. We get it out of the tree
+        using steam, which makes it very pure and good for things. Synthetic camphor on the
+        hand is made from chemicals in a factory for industrial use.
+    </p>
+
+    <h3>Natural Camphor vs Synthetic Camphor</h3>
+
+    <p>
+        camphor smells very nice and real which makes it perfect for prayer and meditation. It is
+        also good for therapy and rituals because it is natural. Since it comes from a tree people
+        like it because it is pure and real. Synthetic camphor may look the same. It does not
+        smell as good as camphor, which is why it is not as good, for spiritual things.
+    </p>
+
+    <p>
+        If you want the camphor you should always buy from a company that makes sure their
+        natural camphor is pure and good. Choosing the best camphor company helps ensure
+        you get natural camphor that smells good for a long time and supports a meaningful
+        spiritual experience.
+    </p>
+
+    <p>
+        At Ecomonks we want to give you the camphor products that make your temple rituals,
+        spiritual practices and things that smell good really special. As a trusted online camphor
+        store we make it easy for you to buy good natural camphor from your home. Whether
+        you need camphor for prayer, meditation, therapy or just to use every day Ecomonks has
+        products that're pure and good.
+    </p>
+
+    <h2>How to Choose the Best Camphor for Pooja</h2>
+
+    <p>
+        When you are doing pooja you want everything to be just right. Camphor is very
+        important for making the air feel clean and calm. If you do pooja every day or just on
+        days using good Bhimseni camphor can make it feel more special. Bhimseni camphor
+        burns nicely. Smells good.
+    </p>
+
+    <p>
+        People like Bhimseni camphor because it is natural and has been used for a time.
+        Bhimseni camphor is better than camphor because it burns all the way and does not
+        leave a mess. Bhimseni camphor also makes your home or temple smell nice and feel
+        peaceful which is great for praying or meditating.
+    </p>
+
+    <h3>What You Should Look for in Good Camphor</h3>
+
+    <p>
+        When you want to buy camphor for pooja remember these things:
+    </p>
+
+    <ul>
+        <li>It should smell nice the smell should last</li>
+        <li>It should burn cleanly not leave a mess</li>
+        <li>It should be good for things</li>
+        <li>It should be made from ingredients</li>
+    </ul>
+
+    <p>
+        Using good camphor when you pray can make the room feel calm and help you focus.
+        To make sure you get the thing, always buy from a company you trust. Good camphor is
+        important for pooja. Bhimseni camphor is a choice.
+    </p>
+
+    <p>
+        If you want to buy the best camphor online in India choose a company that cares about
+        quality and making customers happy. You want to buy camphor that's good for pooja.
+        Bhimseni camphor is a choice for pooja.
+    </p>
+
+    <h3>Why You Should Choose Ecomonks Camphor</h3>
+
+    <p>
+        At Ecomonks we think every prayer is special and deserves the best. Our Bhimseni
+        camphor is chosen carefully to burn cleanly and smell nice. Our Bhimseni camphor is
+        pure and good for rituals. Ecomonks Bhimseni camphor is a choice for pooja. Whether
+        you do pooja every day. On special days Ecomonks camphor can help make the room
+        feel peaceful and nice. Choose Ecomonks for camphor that makes every pooja feel
+        special and nice. Ecomonks camphor is the choice for pooja.
+    </p>
+
+    <h2>The Spiritual Meaning of Camphor in Hindu Worship</h2>
+
+    <p>
+        Camphor is very special in Hindu worship. Has been a key part of prayers and spiritual
+        ceremonies for many years. It is not a simple offering. It stands for purity, being selfless
+        and letting go of the ego. When camphor is burned during aarti it disappears completely
+        without leaving anything behind. This reminds people to give up attachments to the
+        material world and to welcome the divine with a heart.
+    </p>
+
+    <p>
+        The gentle smell of camphor makes a happy environment. It helps people stay focused,
+        be devoted and feel peaceful inside. Its fresh scent is also used a lot in meditation,
+        relaxation and old ways of staying healthy. Whether it is used in home temples or big
+        places of worship, camphor makes the spiritual experience better by creating a place of
+        peace and good feelings.
+    </p>
+
+    <p>
+        Picking the best quality Bhimseni camphor makes sure there is a cleaner burn, a real
+        smell and a true devotional experience. Good quality camphor makes daily practices
+        better. It also shows how respect people have for these holy traditions.
+    </p>
+
+    <p>
+        At Ecomonks we think that real worship starts with real things. Our Bhimseni camphor is
+        chosen carefully to give a burn and a lasting fresh smell that makes every prayer better.
+        As a company that makes sure everything is good, Ecomonks wants to offer things that
+        help activities with honesty and care. That is why it is a choice for people looking for the
+        best camphor brand in India.
+    </p>
+
+    <h2>How Is Camphor Made From Raw Material To Finished Product</h2>
+
+    <p>
+        Camphor is an important thing in Indian traditions. People use it a lot for pooja and
+        meditation. Also for aromatherapy. To make camphor people choose the materials very
+        carefully. They process these materials in a way that ensures they are pure and safe to
+        use. This way the camphor smells good for a time.
+    </p>
+
+    <p>
+        After they process the camphor they shape it into tablets or cubes or blocks. This makes
+        it easy to use every day. The best quality Bhimseni camphor burns cleanly and does not
+        leave a lot of residue. When you burn it it creates a peaceful atmosphere during spiritual
+        rituals.
+    </p>
+
+    <p>
+        At Ecomonks people work hard to give you premium camphor for your home and temple.
+        Ecomonks is a trusted online camphor store where you can buy products that are pure
+        and traditional and work well. If you want to buy the camphor online, Ecomonks is the
+        perfect place to go. They have everything you need for a divine pooja experience, with
+        camphor.
+    </p>
+
+    <h2>Storing Camphor the Right Way for Long-Lasting Freshness</h2>
+
+    <p>
+        Camphor is really important for pooja rituals, temple ceremonies and aromatherapy. The
+        nice smell of Camphor creates an atmosphere making every spiritual practice more
+        special. If you store Camphor properly it will stay pure. Keep its nice smell and
+        effectiveness.
+    </p>
+
+    <h3>Simple Tips to Keep Camphor Fresh</h3>
+
+    <ul>
+        <li>Use an airtight container: Camphor disappears quickly when it is exposed to air so you should always store it in a container that is sealed tightly.</li>
+        <li>Keep it away from heat and sunlight: You should store Camphor in a dry place to keep its nice smell and quality.</li>
+        <li>Protect it from moisture: Water and humidity can make Camphor less effective so you should keep it dry.</li>
+        <li>Store it separately from food: Camphor has a smell that can affect other things near it.</li>
+        <li>Handle Camphor with hands: This helps keep Camphor pure and makes it last longer.</li>
+        <li>Choose High-Quality Camphor</li>
+    </ul>
+
+    <p>
+        The quality of Camphor is just as important as storing it. If you choose Bhimseni
+        Camphor it will smell nice, burn cleaner and make your spiritual experience better. When
+        you are looking for best Camphor online in India you should always choose products
+        from a company that is known for making Camphor that is pure and of good quality.
+    </p>
+
+    <p>
+        At Ecomonks we want to give you the Camphor for your pooja and daily rituals. If you
+        store Camphor properly and use a trusted quality Camphor you can enjoy a long-lasting
+        smell that makes every spiritual moment better. We are talking about Camphor here.
+        Camphor is what will make your rituals more special. So you should always use quality
+        Camphor and store Camphor, in a way that keeps it fresh.
+    </p>
+
+    <h2>How to Know if Camphor Is Pure: A Simple Guide for Every Home</h2>
+
+    <p>
+        Nothing makes prayer time more peaceful than the scent of pure camphor. Whether
+        used for worship temple ceremonies, meditation or for relaxing scents picking good
+        quality camphor improves every moment.
+    </p>
+
+    <h3>How to Find Camphor</h3>
+
+    <ul>
+        <li>Natural scent: Pure camphor has a fresh lasting smell without any strong chemical smell.</li>
+        <li>Burning: It burns completely with a steady flame leaving very little ash or leftover.</li>
+        <li>Scent: Its nice smell spreads fast making a calm and happy environment.</li>
+        <li>No extra stuff: Real camphor has no scents, fillers or bad chemicals.</li>
+    </ul>
+
+    <p>
+        For the spiritual feeling pick best quality Bhimseni camphor known for its natural clean
+        smell, strong scent and clean burn.
+    </p>
+
+    <p>
+        At Ecomonks we are focused on giving high quality camphor that follows the rules of
+        being real. If you are looking for the camphor online in India trust a top camphor
+        company that cares about being real and good. Our camphor is carefully. Perfect for
+        worship temple ceremonies, meditation, scents and daily spiritual activities.
+    </p>
+
+    <p>
+        With Ecomonks every prayer is made better by the smell of real camphor bringing calm
+        good feelings and devotion, to your home.
+    </p>
+
+    <h2>Safety Tips for Using Camphor at Home</h2>
+
+    <p>
+        Camphor has been a cherished part of Indian households for generations. Whether used
+        during daily pooja, temple rituals, meditation, or simply to create a refreshing
+        atmosphere, its soothing fragrance and spiritual significance make it a household
+        essential. However, using camphor safely is just as important as choosing a high-quality
+        product.
+    </p>
+
+    <h3>Simple Safety Tips for Using Camphor</h3>
+
+    <ul>
+        <li><strong>Burn Camphor in a Heat-Resistant Holder</strong> — Always use a sturdy, heat-resistant holder when burning camphor. Keep it away from flammable items such as curtains, paper, wooden décor, or fabrics to reduce the risk of fire.</li>
+        <li><strong>Ensure Proper Ventilation</strong> — When using camphor indoors, make sure the room is well-ventilated. Fresh airflow helps maintain a pleasant fragrance and creates a comfortable environment.</li>
+        <li><strong>Store It Safely</strong> — Keep camphor in a cool, dry place away from moisture. Always store it out of reach of children and pets to prevent accidental contact or ingestion.</li>
+        <li><strong>Never Leave Burning Camphor Unattended</strong> — Whether you're performing pooja or meditating, never leave burning camphor unattended. Extinguish it completely before leaving the room.</li>
+        <li><strong>Choose Pure, High-Quality Camphor</strong> — For the best experience, choose pure Bhimseni camphor from a trusted manufacturer. High-quality camphor burns cleaner, offers a more pleasant aroma, and is ideal for spiritual and household use.</li>
+        <li><strong>Use the Right Amount</strong> — A small quantity of camphor is enough to freshen your space. Using too much can make the fragrance overpowering, so use it in moderation.</li>
+    </ul>
+
+    <h3>Choose Purity, Choose Peace</h3>
+
+    <p>
+        The quality of camphor plays a vital role in both safety and fragrance. At Ecomonks, we
+        believe every home deserves pure, premium-quality camphor that enhances spiritual
+        rituals while creating a calm and refreshing environment.
+    </p>
+
+    <p>
+        If you're looking for the best camphor online India, Ecomonks offers carefully crafted,
+        best quality Bhimseni camphor you can trust. Whether you're buying for daily pooja or
+        home fragrance, you can also shop for the best camphor online with confidence,
+        knowing you're choosing purity, quality, and authenticity.
+    </p>
+
+    <p>
+        Bring purity into your home, elevate every pooja, and create a peaceful atmosphere with
+        Ecomonks.
+    </p>
+
+    <h2>Selecting the Right Camphor for Temples and Homes</h2>
+
+    <p>
+        The glow of a pooja lamp and the soothing fragrance of burning camphor have been an
+        important part of Indian traditions for many years. Whether you are doing rituals at home
+        or offering prayers in a temple choosing the right camphor can improve your spiritual
+        experience and create a calm environment.
+    </p>
+
+    <h3>Why Quality Camphor Matters</h3>
+
+    <p>
+        The quality of camphor has an effect on how it burns and the smell it gives off. Pure
+        camphor burns with very little residue giving off a fresh scent that adds to the holy
+        atmosphere of prayers. This same calming scent is also used in aromatherapy helping
+        to create a place for meditation, worship and rest.
+    </p>
+
+    <h3>Why Bhimseni Camphor Is Preferred</h3>
+
+    <p>
+        Bhimseni camphor is a favorite for rituals because of its natural purity, strong scent and
+        clean burning qualities. Its deep aroma fills the air with a feeling of calm and devotion
+        making it perfect for home altars and temples.
+    </p>
+
+    <h3>Buy from a Trusted Camphor Brand</h3>
+
+    <p>
+        Picking camphor from a company ensures that you get a product that is pure, safe and
+        of good quality. High-quality camphor not only improves your worship time but also
+        gives a cleaner and better smell during every ceremony.
+    </p>
+
+    <h3>Experience Purity with Ecomonks</h3>
+
+    <p>
+        At Ecomonks we believe every prayer deserves the offerings. Our best quality Bhimseni
+        camphor is carefully chosen to give purity, a fresh natural scent and a clean burn.
+        Whether you are doing your pooja or getting ready, for a special religious event our
+        camphor helps make a holy and peaceful space.
+    </p>
+
+    <p>
+        Bring home the purity of top-grade camphor. Make every prayer more meaningful. With
+        Ecomonks every ritual becomes a moment of devotion, energy and calm.
+    </p>
+
+    <h2>A Complete Guide to Buying Camphor in Bulk</h2>
+
+    <p>
+        Camphor has long been valued for its spiritual significance, refreshing fragrance, and
+        versatile uses. From daily pooja and temple rituals to aromatherapy and home fragrance,
+        it remains an essential part of many Indian households and businesses. If you're
+        planning to buy camphor in bulk, looking beyond the price is important. Factors such as
+        purity, quality, consistency, and the manufacturer's reputation can make a significant
+        difference.
+    </p>
+
+    <h3>Choose Purity Over Price</h3>
+
+    <p>
+        When purchasing camphor, quality should always come first. Pure camphor burns
+        cleanly, leaves little to no residue, and releases a pleasant, long-lasting fragrance.
+        Whether you're using it for worship or wellness, choosing premium-quality camphor
+        ensures a more authentic and satisfying experience.
+    </p>
+
+    <h3>Understand Your Requirements</h3>
+
+    <p>
+        Bulk buyers often have different needs depending on how the camphor will be used.
+        Temples, retailers, wellness centers, and businesses should select a product that
+        matches their purpose. For those seeking a natural, clean-burning option with a strong
+        aroma, Bhimseni camphor is an excellent choice for pooja, meditation, and
+        aromatherapy.
+    </p>
+
+    <h3>Partner with a Trusted Manufacturer</h3>
+
+    <p>
+        A reliable camphor manufacturer ensures consistent quality with every batch. From
+        sourcing quality ingredients to maintaining strict production standards and secure
+        packaging, choosing the right supplier helps businesses deliver the best experience to
+        their customers while ensuring dependable inventory.
+    </p>
+
+    <h3>Check Packaging and Storage</h3>
+
+    <p>
+        Proper packaging is essential to preserve the purity and fragrance of camphor.
+        Moisture-resistant packaging helps maintain freshness, extends shelf life, and makes
+        storage and inventory management more convenient for bulk buyers.
+    </p>
+
+    <h3>Why Choose Ecomonks?</h3>
+
+    <p>
+        At Ecomonks, quality is at the heart of everything we do. We are committed to providing
+        pure, premium camphor for temples, retailers, wellness centers, and households across
+        India. As one of the best camphor company choices for quality-conscious buyers, we
+        focus on delivering products that meet high standards of purity and performance.
+    </p>
+
+    <p>
+        If you're looking for the best camphor online, Ecomonks offers a convenient and reliable
+        shopping experience. Our online camphor store makes it easy to explore premium
+        products, whether you need small quantities for home use or bulk orders for business
+        requirements. Customers searching for the best camphor online India trust Ecomonks
+        for consistent quality, dependable service, and authentic products. Our commitment to
+        excellence has also earned us recognition as a top camphor brand in India among
+        customers who value purity and reliability.
+    </p>
+
+    <p>
+        Choose Ecomonks for premium camphor that combines tradition, quality, and
+        trust—making every prayer, ritual, and wellness experience truly meaningful.
+    </p>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="{% static 'homepage/img/logo.jpeg' %}" alt="Ecomonks logo" onerror="this.onerror=null;this.src='https://placehold.co/40x40/C8873A/FDF6EC?text=EC'">
+                    <span>ECOMONKS</span>
+                </div>
+                <p>Premium quality edible karpooram crafted with purity, tradition, and authenticity. Trusted by generations.</p>
+                <div class="social-links">
+                    <a class="social-link" href="#" aria-label="Ecomonks on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-link" href="#" aria-label="Ecomonks on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="social-link" href="#" aria-label="Ecomonks on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a class="social-link" href="#" aria-label="Ecomonks on YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact-item"><i class="fa fa-map-marker-alt"></i><span>Yathisha Bliss No 9/329, Moorkanikkara Kozhukully PO, Thrissur 680752, Kerala, India</span></div>
+                <div class="footer-contact-item"><i class="fa fa-phone-alt"></i><span>+91 9845736584</span></div>
+                <div class="footer-contact-item"><i class="fa fa-envelope"></i><span>Founder@ecomonks.in</span></div>
+            </div>
+            <div class="footer-col">
+                <h4>Working Hours</h4>
+                <dl class="footer-hours">
+                    <dt>Monday – Saturday</dt><dd>24*7 Hours</dd>
+                    <dt>Sunday</dt><dd>Also available</dd>
+                </dl>
+            </div>
+            <div class="footer-col">
+                <h4>Subscribe</h4>
+                <p>Get updates, offers, and the latest product information straight to your inbox.</p>
+                <form method="POST" action="/emailenquiry/">
+                    {% csrf_token %}
+                    <div style="display:flex;gap:0;margin-top:12px;">
+                        <input type="email" name="email" placeholder="Your email address" required
+                               style="flex:1;padding:11px 14px;font-family:'Jost',sans-serif;font-size:0.84rem;color:#fff;background:rgba(255,255,255,0.08);border:1px solid rgba(200,135,58,0.25);border-right:none;border-radius:4px 0 0 4px;outline:none;min-width:0;">
+                        <button type="submit"
+                                style="padding:11px 16px;background:var(--amber);border:none;color:var(--brown);font-size:0.78rem;font-weight:600;cursor:pointer;border-radius:0 4px 4px 0;white-space:nowrap;">Go</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025 <span>ECOMONKS</span>. All Rights Reserved.</p>
+            <p>Designed with ❤️ for Pure Edible Karpooram</p>
+        </div>
+    </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa fa-angle-up"></i>
+</button>
+
+<script>
+    /* Navbar scroll */
+    var navbar  = document.getElementById('navbar');
+    var backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', function() {
+        navbar.classList.toggle('scrolled', window.scrollY > 40);
+        backTop.classList.toggle('visible', window.scrollY > 300);
+    }, { passive: true });
+    backTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* Hamburger */
+    var ham       = document.getElementById('hamburger');
+    var mobileNav = document.getElementById('mobileNav');
+    ham.addEventListener('click', function() {
+        ham.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+            ham.classList.remove('open');
+            mobileNav.classList.remove('open');
+        });
+    });
+</script>
+
+</body>
+</html>
